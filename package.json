@@ -1,0 +1,47 @@
+{
+  "name": "screeps-typescript-slim",
+  "version": "0.1.0",
+  "description": "slimmed down typescript template for screeps AIs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shirk/screeps-typescript-slim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shirk/screeps-typescript-slim/issues"
+  },
+  "author": "Renée Köcher",
+  "license": "MIT",
+  "homepage": "https://github.com/Shirk/screeps-typescript-slim",
+  "engines": {
+    "node": "15.x"
+  },
+  "scripts": {
+    "compile": "rollup -c",
+    "lint": "eslint 'src/**/*.ts'",
+    "push-main": "rollup -c --environment DEST:main",
+    "push-sim": "rollup -c --environment DEST:sim"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-typescript": "^8.2.0",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.31",
+    "@types/screeps": "^3.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-screeps-neat-o": "^1.2.1",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "rollup": "^2.40.0",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-screeps": "^1.0.1",
+    "ScreepsAutocomplete": "github:Garethp/ScreepsAutocomplete",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "source-map": "^0.7.3"
+  }
+}
